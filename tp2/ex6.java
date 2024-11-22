@@ -1,8 +1,8 @@
-package TravauxDirigés2;
+package tp2;
 
 import java.util.Scanner;
 
-public class ex6 {
+public class Ex6 {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);

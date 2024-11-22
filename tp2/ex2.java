@@ -1,8 +1,8 @@
-package TravauxDirigés2;
+package tp2;
 
 import java.util.Scanner;
 
-public class ex2 {
+public class Ex2 {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
@@ -10,6 +10,7 @@ public class ex2 {
 		double a = input.nextDouble();
 		System.out.println("Veillez entrer un second nombre\n>>> ");
 		double b = input.nextDouble();
+		
 		if (a > b) {
 			System.out.println(a + " > " + b);
 		} else if (a == b){

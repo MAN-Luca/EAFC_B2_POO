@@ -1,8 +1,8 @@
-package TravauxDirigés2;
+package tp2;
 
 import java.util.Scanner;
 
-public class ex4 {
+public class Ex4 {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
@@ -19,7 +19,7 @@ public class ex4 {
 			remise = 0;
 		}
 		
-		System.out.println("Le prix à payer est " + montant - (montant * remise)));
+		System.out.println("Le prix à payer est " + (montant - (montant * remise)));
 		input.close();
 	}
 
