@@ -16,10 +16,10 @@ public class ex4 {
 		} else if (montant >= 50 && montant < 100) {
 			remise = 0.05;
 		} else {
-			remise = 1;
+			remise = 0;
 		}
 		
-		System.out.println("Le prix à payer est " + (montant - (montant * remise)));
+		System.out.println("Le prix à payer est " + montant - (montant * remise)));
 		input.close();
 	}
 
