@@ -2,18 +2,17 @@ package tp3;
 
 import java.util.Scanner;
 
+import mes_fonctions.MyFunc;
+
 public class Ex9 {
 
 	public static void main(String[] args) {
 		// Déclarations
 		Scanner input = new Scanner(System.in);
 		// Message de bienvenue
-		System.out.println("=".repeat(71));
-		System.out.println("========== Bienvenue dans le programme qui inverse un nombre ==========");
-		System.out.println("=".repeat(71));
+		MyFunc.afficheMessage("Bienvenue dans le programme qui inverse un nombre");
 		// Lecture de l'entrée de l'utilisateur
-		System.out.print("Veuillez entrer un nombre >>> ");
-		int n = input.nextInt();	
+		int n = MyFunc.getPositiveInput("Veuillez entrer un nombre >>> ");
 		
 		String chaine = "" + n; // ou bien String.valueOf(n)
 		String chaine_reverted = "";
@@ -29,9 +28,7 @@ public class Ex9 {
 		
 		
 		// Message d'au revoir
-		System.out.println("=".repeat(68));
-		System.out.println("========== Merci d'avoir utilisé ce programme ! Au revoir ==========");
-		System.out.println("=".repeat(68));
+		MyFunc.messageFin();
 		// Clôture de l'objet scanner
 		input.close();
 	}

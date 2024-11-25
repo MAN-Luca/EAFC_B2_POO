@@ -2,6 +2,8 @@ package tp3;
 
 import java.util.Scanner;
 
+import mes_fonctions.MyFunc;
+
 public class Ex5 {
 
     public static void main(String[] args) {
@@ -11,9 +13,7 @@ public class Ex5 {
         int compteur = 0;
 
         // Message de bienvenue
-        System.out.println("=".repeat(72));
-        System.out.println("==== Programme pour compter les voyelles dans une chaîne de caractères ====");
-        System.out.println("=".repeat(72));
+        MyFunc.afficheMessage("Programme pour compter les voyelles dans une chaîne de caractères");
 
         // Lecture de la chaîne
         System.out.print("Veuillez entrer une chaîne de caractères >>> ");
@@ -33,9 +33,7 @@ public class Ex5 {
         System.out.println("La chaîne contient " + compteur + " voyelle(s).");
 
         // Message de fin
-        System.out.println("=".repeat(50));
-        System.out.println("Merci d'avoir utilisé ce programme !");
-        System.out.println("=".repeat(50));
+        MyFunc.messageFin();
 
         // Clôture de l'objet Scanner
         input.close();

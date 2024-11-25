@@ -2,6 +2,8 @@ package tp3;
 
 import java.util.Scanner;
 
+import mes_fonctions.MyFunc;
+
 public class Ex3 {
 
 	public static void main(String[] args) {
@@ -9,21 +11,16 @@ public class Ex3 {
 		Scanner input = new Scanner(System.in);
 		int i = 0;
 		// Message de bienvenue
-		System.out.println("=".repeat(89));
-		System.out.println("========== Bienvenue dans le programme qui affiche les nombres pairs jusqu'a n ==========");
-		System.out.println("=".repeat(89));
+		MyFunc.afficheMessage("Bienvenue dans le programme qui affiche les nombres pairs jusqu'a n");
 		// Lecture de l'entrée de l'utilisateur
-		System.out.print("Veuillez entrer le nombre n >>> ");
-		int n = input.nextInt();
+		int n = MyFunc.getPositiveInput("Veuillez entrer un nombre >>> ");
 		// Affiche des nombre si ils sont pairs
 		while (i < n+1) {
 			if (i % 2 == 0) {System.out.println(i);}
 			i++;
 		}
 		// Message d'au revoir
-		System.out.println("=".repeat(68));
-		System.out.println("========== Merci d'avoir utilisé ce programme ! Au revoir ==========");
-		System.out.println("=".repeat(68));
+		MyFunc.messageFin();
 		// Clôture de l'objet scanner
 		input.close();
 	}
