@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<colorTheme author="Felipe Gomes" id="2397" name="Tokyonight Storm">
+    <foreground color="#c0caf5"/>
+    <background color="#24283b"/>
+    <selectionForeground color="#c0caf5"/>
+    <selectionBackground color="#2e3c64"/>
+    <currentLine color="#292e42"/>
+    <lineNumber color="#737aa2"/>
+    <searchResultIndication color="#ff9e64"/>
+    <filteredSearchResultIndication color="#ff9e64"/>
+    <occurrenceIndication color="#1d202f"/>
+    <writeOccurrenceIndication color="#335A72"/>
+    <findScope color="#1E789B"/>
+    <sourceHoverBackground color="#1f2335"/>
+    <singleLineComment color="#8991b6" bold="false" italic="false" underline="false" strikethrough="false"/>
+    <multiLineComment color="#8991b6" bold="false" italic="false" underline="false" strikethrough="false"/>
+    <commentTaskTag color="#565f89" bold="true" italic="false" underline="false" strikethrough="false"/>
+    <javadoc color="#888fb5" bold="false" italic="true" underline="false" strikethrough="false"/>
+    <javadocLink color="#e0af68" bold="false" italic="false" underline="false" strikethrough="false"/>
+    <javadocTag color="#e0af68" bold="true" italic="true" underline="false" strikethrough="false"/>
+    <javadocKeyword color="#e0af68" bold="false" italic="false" underline="false" strikethrough="false"/>
+    <class color="#29a4bd" bold="true" italic="false" underline="false" strikethrough="false"/>
+    <interface color="#bb9af7" bold="false" italic="false" underline="false" strikethrough="false"/>
+    <method color="#7aa2f7" bold="false" italic="false" underline="false" strikethrough="false"/>
+    <methodDeclaration color="#7aa2f7" bold="true" italic="false" underline="false" strikethrough="false"/>
+    <bracket color="#a9b1d6" bold="false" italic="false" underline="false" strikethrough="false"/>
+    <number color="#ff9e64" bold="false" italic="false" underline="false" strikethrough="false"/>
+    <string color="#9ece6a" bold="false" italic="true" underline="false" strikethrough="false"/>
+    <operator color="#89ddff" bold="false" italic="false" underline="false" strikethrough="false"/>
+    <keyword color="#bb9af7" bold="false" italic="true" underline="false" strikethrough="false"/>
+    <annotation color="#565f89" bold="false" italic="false" underline="false" strikethrough="false"/>
+    <staticMethod color="#7aa2f7" bold="false" italic="true" underline="false" strikethrough="false"/>
+    <localVariable color="#b4d8f3" bold="false" italic="false" underline="false" strikethrough="false"/>
+    <localVariableDeclaration color="#b4d8f3" bold="false" italic="false" underline="false" strikethrough="false"/>
+    <field color="#66E1F8" bold="false" italic="false" underline="false" strikethrough="false"/>
+    <staticField color="#8DDAF8" bold="false" italic="false" underline="false" strikethrough="false"/>
+    <staticFinalField color="#8DDAF8" bold="false" italic="false" underline="false" strikethrough="false"/>
+    <deprecatedMember color="#3b4261" bold="false" italic="false" underline="false" strikethrough="false"/>
+    <deletionIndication color="#3f2d3d" bold="false" italic="false" underline="false" strikethrough="false"/>
+    <enum color="#29a4bd" bold="false" italic="true" underline="false" strikethrough="false"/>
+    <inheritedMethod color="#7aa2f7" bold="false" italic="true" underline="false" strikethrough="false"/>
+    <abstractMethod color="#7aa2f7" bold="true" italic="true" underline="false" strikethrough="false"/>
+    <parameterVariable color="#e6bf86" bold="false" italic="false" underline="false" strikethrough="false"/>
+    <typeArgument color="#D7837F" bold="false" italic="false" underline="false" strikethrough="false"/>
+    <typeParameter color="#BFA4A4" bold="false" italic="false" underline="false" strikethrough="false"/>
+    <constant color="#ff9e64" bold="false" italic="false" underline="false" strikethrough="false"/>
+</colorTheme>
