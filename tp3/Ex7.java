@@ -16,8 +16,9 @@ public class Ex7 {
         // Message de bienvenue
         MyFunc.afficheMessage("Bienvenue dans le programme d'authentification");
         // Vérification du mot de passe (rappel bon mdp ! 1324)
+        System.out.println("Vous avez 3 essais pour entrer votre mot de passe");
         do {
-        	System.out.print("Vous avez 3 essais pour entrer votre mot de passe\nVeuillez entrer votre mot de passe >>> ");
+        	System.out.print("Veuillez entrer votre mot de passe >>> ");
 			mot_de_passe = input.next();
 			
 			if (mot_de_passe.equals("1234")) {

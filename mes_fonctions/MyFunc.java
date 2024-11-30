@@ -1,5 +1,6 @@
 package mes_fonctions;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -12,7 +13,7 @@ public class MyFunc {
     }
 
 	public static void messageFin() {
-		System.out.println("\n" + "=".repeat(68));
+		System.out.println("\n\n" + "=".repeat(68));
 		System.out.println("========== Merci d'avoir utilisé ce programme ! Au revoir ==========");
 		System.out.println("=".repeat(68));
 	}
@@ -40,4 +41,35 @@ public class MyFunc {
         input.close();
         return test;  // Retourne la valeur valide
     }
+
+ 	public static int[] tri_bulle_tableau(int[] tab){
+ 		for (int i = 0; i < tab.length - 1; i++) {
+ 			for (int j = 0; j < tab.length - i - 1; j++) {
+ 				if (tab[j] > tab[j + 1]) {
+ 					int temp = tab[j];
+ 					tab[j] = tab[j + 1];
+ 					tab[j + 1] = temp;
+ 				}
+ 			}
+ 		}
+     	return tab;
+     }
+
+ 	
+ 	public static ArrayList<Integer> tri_bulle_arraylist(ArrayList<Integer> liste){
+        // Tri à bulles sur ArrayList
+        for (int i = 0; i < liste.size() - 1; i++) {
+            for (int j = 0; j < liste.size() - i - 1; j++) {
+                // Comparer les éléments adjacents
+                if (liste.get(j) > liste.get(j + 1)) {
+                    // Échanger les éléments
+                    int temp = liste.get(j);
+                    liste.set(j, liste.get(j + 1));
+                    liste.set(j + 1, temp);
+                }
+            }
+        }
+     	return liste;
+ 	}
+
 }
