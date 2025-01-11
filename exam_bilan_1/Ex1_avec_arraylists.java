@@ -1,4 +1,5 @@
 package exam_bilan_1;
+import java.util.ArrayList;
 /*
     1. Saisie de données :  
                             - Demander à l'utilisateur de saisir les notes d'un étudiant (maximum 10)
@@ -15,49 +16,39 @@ package exam_bilan_1;
 */
 import java.util.Scanner;
 
-public class Ex1
+public class Ex1_avec_arraylists
 {
 	public static void main(String[] args) 
 	{
 		Scanner input = new Scanner(System.in);
         int note;
-        int c = 0;
-        
-        // Initialisation du tableau avec tous les élements à -1 
-        int[] tab = new int[10];
-        
-        for (int i = 0; i < tab.length; i++)   /* OU alors Arrays.fill(tab, -1) */
-			tab[i] = -1;
-        
+   
+        // Initialisation du tableau dynamique
+        ArrayList<Integer> tab = new ArrayList<>(); 
         // Lire les notes en saisie
         do 
         {
             System.out.print("Entrez une note (ou un nombre négatif pour stoper la saisie) : ");
             note = input.nextInt();
-            tab[c] = note;
-            c++;
-        } while (tab.length <= 10 && note > 0);
+            if (note >= 0)
+            	tab.add(note);
+        } while (tab.size() <= 10 && note >= 0);
         
         // Calculer la moyenne
         int som = 0;
-        int nb_notes = 0;
-        for (int x : tab)
-        {
-			if (x != -1)
-			{
-				som += x;
-				nb_notes++;
-			}
-        }
-        double moy = (double) som / (double) nb_notes;
+        for (Integer x : tab)
+		{
+			som += x;
+		}
+        double moy = (double) som / (double) tab.size();
         
         // Afficher note supérieures ou égales à la moyenne
         String notes_sup_moy = "";
-        for (int i = 0; i < tab.length; i++)
+        for (Integer x : tab)
 		{
-			if (tab[i] >= moy)
+			if (x >= moy)
 			{
-				notes_sup_moy += tab[i] + " ";
+				notes_sup_moy += x + " ";
 			}
 		}
         // Afficher réussi ou raté
@@ -66,53 +57,31 @@ public class Ex1
         // Recherche d'une valeur
         System.out.print("Veuillez entrer une note à rechercher : ");
         int recherche = input.nextInt();
-        int indice = 0;
-        boolean res_recherche = false;
+        int res_recherche = tab.indexOf(recherche);
         
-        for (int i = 0; i < tab.length; i++)
+        // Afficher la note max et min
+        int min = tab.get(0);
+        int max = tab.get(0);
+        for (Integer elem : tab)
 		{
-			if (tab[i] == recherche)
+			if (elem < min)
 			{
-				res_recherche = true;
-				indice = i;
-				break;
+				min = elem;
+			}
+			if (elem > max)
+			{
+				max = elem;
 			}
 		}
-        // Afficher la note max et min
-        int min = tab[0];
-        int max = tab[0];
-        for (int elem : tab)
-		{
-        	if (elem != -1)
-        	{
-				if (elem < min)
-				{
-					min = elem;
-				}
-				if (elem > max)
-				{
-					max = elem;
-				}
-        	}
-		}
-        
         
         System.out.println("Résultats --------------------------------------------------------------------------\n");
-        // Affichage des notes sans les -1
-        System.out.print("Notes de l'étudiant : ");
-        for (int i = 0; i < tab.length; i++) {
-            if (tab[i] != -1) {
-                System.out.print(tab[i] + " ");
-            }
-        }
-        System.out.println();
-
+        System.out.println("Notes de l'étudiant : " + tab);
         System.out.println("La moyenne des notes : " + String.format("%.2f", moy) +"/20");
         System.out.println("Notes supérieures ou égales à la moyenne des notes : " + notes_sup_moy);
         System.out.println("L'étudiant à " + resultat);
-        if (res_recherche) 
+        if (res_recherche != -1) 
         {
-        	System.out.println("La note " + recherche + " se trouve dans le tableau à la position " + indice);
+        	System.out.println("La note " + recherche + " se trouve dans le tableau à la position " + res_recherche);
         }
         else
         {
