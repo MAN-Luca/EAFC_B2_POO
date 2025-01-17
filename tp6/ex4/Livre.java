@@ -14,7 +14,7 @@ public class Livre {
 	}
 	
 	public void vendre(int q) {
-		if (this.quantite <= 1) {
+		if (this.quantite - q < 0) {
 			System.out.println("ERREUR : Le livre n'est plus disponible");
 		} else {
 			this.quantite -= q;
