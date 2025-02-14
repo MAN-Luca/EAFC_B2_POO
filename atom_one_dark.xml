@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<colorTheme id="9999" name="One Dark Pro" modified="2025-01-14 20:00:00" author="Luca Mansutti" website="https://atom.io/themes/one-dark-ui">
+    <searchResultIndication color="#528BFF" />
+    <filteredSearchResultIndication color="#528BFF" />
+    <occurrenceIndication color="#3E4451" />
+    <writeOccurrenceIndication color="#3E4451" />
+    <findScope color="#3E4451" />
+    <deletionIndication color="#E06C75" />
+    <sourceHoverBackground color="#3E4451" />
+    <singleLineComment color="#7F848E" italic="false" />
+    <multiLineComment color="#7F848E" italic="false" />
+    <commentTaskTag color="#7F848E" />
+    <javadoc color="#7F848E" italic="false" />
+    <javadocLink color="#98C379" />
+    <javadocTag color="#E06C75" />
+    <javadocKeyword color="#E06C75" />
+    <class color="#E5C07B" />
+    <interface color="#E5C07B" />
+    <method color="#61AFEF" />
+    <methodDeclaration color="#61AFEF" />
+    <bracket color="#ABB2BF" />
+    <number color="#D19A66" />
+    <string color="#98C379" />
+    <operator color="#ABB2BF" />
+    <keyword color="#C678DD" />
+    <annotation color="#E06C75" />
+    <staticMethod color="#61AFEF" />
+    <localVariable color="#E06C75" />
+    <localVariableDeclaration color="#E06C75" />
+    <field color="#E06C75" />
+    <staticField color="#D19A66" />
+    <staticFinalField color="#D19A66" />
+    <deprecatedMember color="#5B5E66" underline="true" strikethrough="true" />
+    <enum color="#E5C07B" />
+    <inheritedMethod color="#61AFEF" />
+    <abstractMethod color="#61AFEF" />
+    <parameterVariable color="#D19A66" />
+    <typeArgument color="#E5C07B" />
+    <typeParameter color="#E5C07B" />
+    <constant color="#D19A66" bold="false" underline="false" strikethrough="false" />
+
+    <background color="#282C34" />
+    <currentLine color="#3E4451" />
+    <foreground color="#ABB2BF" />
+    <lineNumber color="#5C6370" />
+    <selectionBackground color="#3E4451" />
+    <selectionForeground color="#ABB2BF" />
+
+    <!-- Highlight for 'this' references -->
+    <thisReference color="#FF0000" />
+</colorTheme>
