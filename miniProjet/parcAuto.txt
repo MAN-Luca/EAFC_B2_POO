@@ -1,0 +1,3 @@
+Voiture;1REV454;Citroen;C1;2008;124053.0;5
+Camion;1XCV456;VolksWagen;Scanna;2016;478651.0;32.0
+Voiture;1ABC987;Fiat;Nuova 500;1957;213457.0;5

@@ -12,8 +12,7 @@ public class Ex1 {
 		MyFunc.afficheMessage("Compter les caractères");
 		System.out.print("Veuillez entrer une chaine de caractère >>> ");
 		String x = input.nextLine();
-		System.out.println("La chaine de caractères \"" + x + "\" contient " + x.trim().length() + " caractères");
-		System.out.println("La chaine de caractères sans les espaces contient " + x.replaceAll("\\s", "").length());
+		System.out.print("La chaine de caractères \"" + x + "\" contient " + x.trim().length() + " caractères");
 		MyFunc.messageFin();
 
 		input.close();

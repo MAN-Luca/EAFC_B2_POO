@@ -21,5 +21,6 @@ public abstract class Personne
     {
         System.out.println("Nom: " + nom);
         System.out.println("ID: " + id);
+       
     }
 }
