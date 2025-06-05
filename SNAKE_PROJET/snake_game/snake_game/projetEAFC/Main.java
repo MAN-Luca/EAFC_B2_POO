@@ -1,4 +1,4 @@
-package snake_game;
+package snake_game.projetEAFC;
 
 public class Main
 {

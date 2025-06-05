@@ -1,19 +1,31 @@
 package revisionEX4;
 
-public class Chat extends Animal {
-
-	public Chat(String nom) {
+//Classe qui hérite de la classe Animal
+public class Chat extends Animal 
+{
+	// Constructeur de la classe
+	public Chat(String nom) 
+	{
+		// Appel au constructeur de la classe mère en utilisant super()
 		super(nom);
 	}
-
+	
+	// Implémentation de la méthode abstraite 
 	@Override
-	public void crier() {
+	public void crier() 
+	{
 		System.out.println("Le chat miaule");
 	}
-	public void grimperArbre(int hauteur) {
-		if (hauteur < 0) {
+	
+	// Méthode concrète spécifique aux chats
+	public void grimperArbre(int hauteur) 
+	{
+		if (hauteur < 0) // Si la hauteur est négative ça affiche une erreur
+		{
 			System.out.println("ERREUR HAUTEUR NEGATIVE");
-		} else {
+		} 
+		else // Sinon par d'erreur et ça affiche un message
+		{
 			System.out.println(nom + " grimpe à " + hauteur + " mètres.");
 		}
 	}
